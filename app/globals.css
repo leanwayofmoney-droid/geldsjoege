@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens ───────────────────────────────────────────── */
+:root {
+  --color-primary:  #2C5A85;
+  --color-accent:   #C8813F;
+  --color-navy:     #1E2D3D;
+  --color-gray:     #6C7B8B;
+  --color-muted:    #9BA8B5;
+  --color-bg:       #F8F9FA;
+  --color-surface:  #FFFFFF;
+  --color-border:   #E2E6EA;
+  --color-hero-bg:  #F9F6F2;
+  --color-money:    #059669;   /* smaragdgroen voor eurobedragen */
+
+  --font-display:   'Fraunces', Georgia, serif;
+  --font-body:      'Inter', system-ui, sans-serif;
+
+  --shadow-card:    0 1px 4px rgba(0,0,0,0.06);
+  --shadow-hover:   0 12px 32px rgba(0,0,0,0.1);
+  --radius-card:    16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typografie: serif voor display-koppen ───────────────────── */
+h1, h2 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+h2 {
+  letter-spacing: -0.015em;
+}
+
+/* ── Eyebrow label ───────────────────────────────────────────── */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* ── Hero achtergrond (gelaagd) ──────────────────────────────── */
+.hero-bg {
+  background:
+    radial-gradient(ellipse 70% 55% at 92% 0%,   rgba(5,150,105,0.09)   0%, transparent 58%),
+    radial-gradient(ellipse 50% 45% at 5%  90%,  rgba(200,129,63,0.055) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 40% at 50% 110%, rgba(44,90,133,0.04)   0%, transparent 60%),
+    linear-gradient(168deg, #FAFAF8 0%, #F2F5F2 100%);
+}
+
+/* Dot-grid overlay */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(44,90,133,0.065) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gradient tekst utility (voor hero heading accent) */
+.text-gradient {
+  background: linear-gradient(135deg, #059669 0%, #34D399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Grain texture overlay ───────────────────────────────────── */
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.028;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+/* ── Hero blob animaties ─────────────────────────────────────── */
+.hero-blob-1 {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, rgba(5,150,105,0.13) 0%, transparent 60%);
+  top: -260px;
+  right: -180px;
+  animation: blob-float 14s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-blob-2 {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, rgba(200,129,63,0.07) 0%, transparent 68%);
+  bottom: -60px;
+  left: 10%;
+  animation: blob-float 20s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.hero-blob-3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, rgba(44,90,133,0.07) 0%, transparent 70%);
+  top: 40%;
+  left: 38%;
+  animation: blob-float 17s ease-in-out infinite 3s;
+  pointer-events: none;
+}
+
+@keyframes blob-float {
+  0%,  100% { transform: translate(0px,   0px)  scale(1);    }
+  33%        { transform: translate(18px, -22px) scale(1.04); }
+  66%        { transform: translate(-12px, 14px) scale(0.97); }
+}
+
+/* ── Hero entrance (één keer bij page load) ──────────────────── */
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.hero-animate          { animation: hero-enter 0.7s cubic-bezier(0.22,1,0.36,1) both; }
+.hero-animate-d1       { animation: hero-enter 0.7s cubic-bezier(0.22,1,0.36,1) 120ms  both; }
+.hero-animate-d2       { animation: hero-enter 0.7s cubic-bezier(0.22,1,0.36,1) 260ms  both; }
+.hero-animate-d3       { animation: hero-enter 0.7s cubic-bezier(0.22,1,0.36,1) 420ms  both; }
+.hero-animate-d4       { animation: hero-enter 0.7s cubic-bezier(0.22,1,0.36,1) 560ms  both; }
+
+/* ── Artikel-sectie nummer ───────────────────────────────────── */
+.section-nr {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--color-accent);
+  opacity: 0.12;
+  user-select: none;
+  pointer-events: none;
+  flex-shrink: 0;
+  width: 3rem;
+  text-align: right;
+}
+
+/* ── Prose verrijking ────────────────────────────────────────── */
+.article-quote {
+  border-left: 3px solid var(--color-accent);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  background: rgba(200,129,63,0.04);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--color-navy);
+}
+
+/* ── Nav underline animatie ──────────────────────────────────── */
+.nav-link {
+  position: relative;
+  padding-bottom: 3px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  transition: width 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover::after,
+.nav-link-active::after {
+  width: 100%;
+}
+
+/* ── Pulse animatie voor CTA-knoppen ────────────────────────── */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0   rgba(5,150,105,0.4); }
+  70%  { box-shadow: 0 0 0 10px rgba(5,150,105,0);   }
+  100% { box-shadow: 0 0 0 0   rgba(5,150,105,0);    }
+}
+.pulse {
+  animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ── Skeleton loading shimmer ────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 37%, #f0f0f0 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 6px;
+}

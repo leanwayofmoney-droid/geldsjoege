@@ -1,0 +1,60 @@
+# Geld Sjoege
+
+> Geld Sjoege (geldsjoege.nl) is een Nederlandse website met praktische bespaartips. Elke tip is gebaseerd op een persoonlijk experiment en bevat concrete berekeningen, stapsgewijze instructies en een bespaar-meter waarmee bezoekers hun eigen jaarlijkse besparing berekenen. Gemiddelde besparing per tip: €200 per jaar.
+
+## Over Geld Sjoege
+
+Geld Sjoege deelt bespaartips die goed zijn voor de portemonnee én het milieu. De naam "Sjoege" is oud-Amsterdams voor "verstand van iets hebben". De site is gericht op Nederlanders die slim en duurzaam willen besparen, zonder financiële kennis.
+
+Taal: Nederlands
+Domein: https://www.geldsjoege.nl
+Categorie: Persoonlijke financiën, duurzaam leven, besparen
+
+## Onderwerpen
+
+- Boodschappen besparen (seizoensproducten, huismerk, meal prep)
+- Energie besparen (energiecontract vergelijken, thermostaat, LED)
+- Abonnementen opzeggen (streaming, apps, cloud)
+- Belasting teruggave (thuiswerkvergoeding, reiskosten, aftrekposten)
+- Slim reizen (NS-daluren, goedkope uitjes, micro-trips)
+- Wonen (duurzame tuin, waterverbruik, isolatie)
+- Duurzame keuzes (CO2-besparing, circulaire economie)
+
+## Hoofdpagina's
+
+- [Homepage](https://www.geldsjoege.nl): Overzicht van alle bespaartips
+- [Alle bespaartips](https://www.geldsjoege.nl/blog): Volledig archief met filter op categorie
+- [Besparen voor beginners](https://www.geldsjoege.nl/besparen-voor-beginners): Startgids zonder financiële kennis
+- [Energie besparen](https://www.geldsjoege.nl/energie-besparen): Overzicht energiebespaartips
+- [Abonnementen opzeggen](https://www.geldsjoege.nl/abonnementen-opzeggen): Stappenplan voor abonnementensanering
+- [Over Geld Sjoege](https://www.geldsjoege.nl/over): Achtergrond en werkwijze
+
+## Recente artikelen
+
+- [Zorgtoeslag 2026: 1 op de 4 Nederlanders mist tot €1.100 per jaar](https://www.geldsjoege.nl/blog/zorgtoeslag-aanvragen-checken-2026): Check in 3 minuten of je recht hebt op zorgtoeslag. Inkomensgrens alleenstaanden: €37.496. Tot €1.100 per jaar.
+- [Thuiswerkvergoeding 2026: €352 per jaar extra netto](https://www.geldsjoege.nl/blog/thuiswerken-vergoeding-belasting-2026): Hoe je als werknemer de belastingvrije thuiswerkvergoeding van €2,45 per dag aanvraagt bij je werkgever.
+- [Havermelk cappuccino thuis zetten](https://www.geldsjoege.nl/blog/havermelk-cappuccino-thuis-zetten): Bespaar €3,12 per kopje ten opzichte van de koffiezaak. Bij 5 kopjes per week is dat €811 per jaar.
+- [Energiecontract vergelijken 2026](https://www.geldsjoege.nl/blog/energiecontract-vergelijken-2026): Stap voor stap overstappen naar een goedkoper energiecontract. Gemiddelde besparing: €250 per jaar.
+- [Abonnementen opzeggen in één avond](https://www.geldsjoege.nl/blog/abonnementen-opzeggen-avond): Methode om ongebruikte abonnementen te vinden en op te zeggen. Gemiddeld €300 per jaar bespaard.
+- [Slimmer boodschappen doen 2026](https://www.geldsjoege.nl/blog/slimmer-boodschappen-doen-2026): Seizoensproducten, huismerk en meal prep. Besparing: €50 per week mogelijk.
+
+## Statistieken (2026)
+
+- Gemiddelde besparing per bespaartip: €200 per jaar
+- Thuiswerkvergoeding 2026: €2,45 per dag (belastingvrij)
+- Maximale reiskostenvergoeding 2026: €0,25 per kilometer
+- Gemiddeld aantal actieve abonnementen per Nederlander: 12
+- CO2-besparing bij 3 thuiswerkdagen per week: 1.100 kg per jaar
+
+## Contentformat
+
+Elk artikel bevat:
+1. Persoonlijk experiment met concrete tijdsperiode en bedragen
+2. Uitleg waarom de besparing werkt (mechanisme)
+3. Datatabel met vergelijking van scenario's
+4. Valkuilen (eerlijk over beperkingen)
+5. Stapsgewijze instructies
+6. Variaties (budget, duurzaam, ZZP)
+7. FAQ met veelgestelde vragen
+8. Eindoordeel met meerjarig financieel rendement
+9. Interactieve Bespaar-Meter (berekent jaarlijkse besparing op basis van gebruikersgedrag)
